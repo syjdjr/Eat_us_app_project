@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "277159725901",
+    "project_id": "eatus2-5e8fa",
+    "storage_bucket": "eatus2-5e8fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277159725901:android:9568e6ca7c1f33331f0504",
+        "android_client_info": {
+          "package_name": "com.example.eat_us_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1v0d0yveTzpCcSlT6eWOpqqTZZzp7akM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:adjustViewBounds="true"
+            android:paddingTop="15dp"
+            android:onClick="onImageViewClick"
+            android:layout_gravity="center"
+            android:src="@drawable/plus1"/>
+
+        <EditText
+            android:id="@+id/recipe_topic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="나만의 레시피 제목을 입력해보세요!"
+            android:layout_below="@id/recipe_topic"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/recipe"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/recipe"
+            android:gravity="start|top"
+            android:layout_marginBottom="15dp"
+            android:hint="나만의 레시피를 입력해보세요!"/>
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="완료"/>
+
+    </LinearLayout>
+
+</ScrollView>

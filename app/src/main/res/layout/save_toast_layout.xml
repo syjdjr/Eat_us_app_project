@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="99dp"
+            android:src="@drawable/check" />
+    <TextView
+        android:id="@+id/savetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장 완료"
+        android:paddingBottom="6dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/savetext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/savetext"
+        android:text="식료품이 냉장고에 저장되었습니다!"
+        android:paddingBottom="20dp"/>
+    <Button
+        android:id="@+id/goFridge_btn"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:textColor="@color/white"
+        android:text="냉장고 가기"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_savebtn"/>
+
+    <Button
+        android:id="@+id/goBack_btn"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="뒤로 가기"
+        android:textColor="@color/white"
+        android:background="@drawable/layout_gobackbtn"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation = "vertical"
+        android:layout_marginTop="40dp"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/nameinput"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:layout_below="@id/name"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/layout_edittext"
+            android:hint="@string/nameinput"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/category" />
+
+        <ImageView
+            android:id="@+id/selectedCategoryImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="70dp"
+            android:maxHeight="70dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/category_btn"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:hint="@string/category_btn"
+            android:layout_below="@id/selectedCategoryImage"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/layout_categorybtn"
+            />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:text="@string/num"
+            />
+
+        <EditText
+            android:id="@+id/numinput"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="  0"
+            android:layout_below="@id/num"
+            android:background="@drawable/layout_edittext"
+            android:inputType="number"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/vdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:text="@string/vdate" />
+
+        <Button
+            android:id="@+id/vdate_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/vdate"
+            android:text="@string/vdate_btn"
+            android:onClick="onClick"
+            android:background="@drawable/layout_edittext"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:text="@string/memo" />
+
+        <EditText
+            android:id="@+id/memoinput"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:hint="@string/memo"
+            android:layout_below="@id/memo"
+            android:background="@drawable/layout_edittext"
+            android:gravity="start|top"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/addsave_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save_btn"
+                android:textColor="@color/white"
+                android:background="@drawable/layout_savebtn"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
